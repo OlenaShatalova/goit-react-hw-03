@@ -1,13 +1,17 @@
+import formik from 'react';
+import ContactForm from './copmonents/ContactForm/ContactForm';
+import ContactList from './copmonents/ContactList/ContactList';
+import SearchBox from './copmonents/SearchBox/SearchBox';
 import './App.css';
-import Comp1 from './copmonents/Comp1/Comp1';
-import Comp2 from './copmonents/Comp2/Comp2';
 
 function App() {
   return (
-    <>
-      <Comp1 />
-      <Comp2 />
-    </>
+    <div>
+      <h1>Phonebook</h1>
+      <ContactForm />
+      <SearchBox />
+      <ContactList />
+    </div>
   );
 }
 
